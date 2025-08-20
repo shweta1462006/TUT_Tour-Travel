@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+     
+  colors: {
+    primary: '#0f172a',     // deep navy
+    secondary: '#1e293b',   // slate dark
+    textMain: '#ffffff',
+    subText: '#94a3b8',     // muted gray
+    accent: '#f59e0b',      // amber for highlights
+  },
+
+
         keyframes: {
         "up-down": {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -20,6 +31,7 @@ export default {
     },
     
   },
+  
   plugins: [daisyui],
    variants: {
     extend: {

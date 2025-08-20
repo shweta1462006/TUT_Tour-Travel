@@ -1,58 +1,54 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import AboutDetail from "./AboutDetail"
 
-export default function NYCTravelSection() {
-   const navigate = useNavigate();
+
+export default function Hero890() {
+    const navigate = useNavigate();
+  const imageUrl = [
+    'https://images.pexels.com/photos/30972051/pexels-photo-30972051.jpeg',
+    'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg',
+    'https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg',
+  ];
+
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-gray-700">
-            <div className="flex flex-col  sm:flex-row justify-center items-center">
-          <p className="text-5xl sm:text-6xl md:text-5xl font-extrabold text-orange-600 m-2">About</p>
-          <p className="text-5xl sm:text-6xl md:text-5xl font-bold text-white m-2">Us</p>
-        </div>
-        <p className="mt-6 text-base sm:text-lg text-gray-400 max-w-xl mx-auto">
-          We’re a dynamic group of individuals who are passionate about what
-          we do and dedicated to delivering the best results for our clients.
-        </p>
-    <div className="bg-gradient-to-r from-gray-900 to-gray-700   min-h-screen flex items-center justify-center p-6">
-      <div className="g-gradient-to-r from-gray-900 to-gray-700  max-w-5xl w-full rounded-xl  flex flex-col md:flex-row overflow-hidden">
-        <div className="md:w-1/2 w-full">
-          <img
-            src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" // Replace with real image
-            alt="Person sitting on stairs"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
+    <div className="bg-gradient-to-r from-primary to-secondary py-16 px-4 sm:px-8 lg:px-16 text-center">
+      
+      {/* Hero Heading */}
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-accent mb-6">
+        Unlock the World with TravelBooker
+      </h1>
 
-        <div className="md:w-1/2 w-full p-8 space-y-5">
-          <h2 className="text-3xl font-semibold text-gray-200">
-            Elevate your trip with an  travel expert
-          </h2>
-          <p className="text-gray-200 text-sm">
-            I understand what it’s like to be a tourist in New York City. I’ve spent years
-            searching NYC neighborhood by neighborhood, street by street. I’ve moved
-            every few months and I’ve planned countless vacations for friends and family.
-          </p>
+      {/* Hero Subtext */}
+      <p className="text-lg sm:text-xl text-subText max-w-3xl mx-auto mb-12">
+        Whether you're dreaming of sandy beaches, mountain adventures, or vibrant cities,
+        TravelBooker helps make your perfect trip come true — stress-free, safe, and memorable.
+      </p>
 
-          <h3 className="text-gray-400 font-semibold">About the company</h3>
-          <p className="text-gray-300 text-sm">
-            With my support, I can bring focus to your trip, help you make the most
-            of your travel plans. Need help deciding on shows or restaurants? 
-            Overwhelmed by the subway system? I’ve got you. I’ll reduce your stress, 
-            save you t            With my support, I can bring focus to your trip, help you make the most
-            of your travel plans. Need help deciding on shows or restaurants? 
-            Overwhelmed by the subway system? I’ve got you. I’ll reduce your stress, 
-            save you time and help you explore the greatest city in the world.
-ime and help you explore the greatest city in the world.
-          </p>
-
-<button
-  onClick={() => navigate('/aboutdetail')}           className="mt-4 px-6 py-2 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold rounded">
-            START HERE
-          </button>
-        </div>
+      {/* Image Grid */}
+      <div className="grid ml-52 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
+        {imageUrl.map((pic, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src={pic}
+              alt={`Travel Destination ${index + 1}`}
+              className="w-full h-[280px] sm:h-[300px] md:h-[320px] object-cover"
+            />
+          </div>
+        ))}
       </div>
-    </div>
+
+      {/* Call to Action Button */}
+      <button
+       onClick={() => navigate('/Tour')}
+        className="mt-4 px-8 py-4 bg-accent text-primary font-semibold rounded hover:bg-accent-dark transition flex items-center gap-3 mx-auto text-lg">
+        Explore Now
+        <FontAwesomeIcon icon={faArrowRight} className="text-primary text-xl" />
+      </button>
     </div>
   );
 }

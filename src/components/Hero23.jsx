@@ -6,7 +6,7 @@ import { TourPage } from './Hero23.js';
 export default function Hero23() {
   return (
 
-    <div className='flex bg-gradient-to-r from-gray-900 to-gray-700'>
+    <div className='flex bg-gradient-to-r from-primary to-secondary'>
       <div className='w-[500px]  h-[700px] m-4  '>
         <MainD />
       </div>
@@ -14,8 +14,7 @@ export default function Hero23() {
 
         <div className='flex flex-col' key={carddetail2.id}>
           <div className='w-[900px] h-[300px]  mt-10 '>
-login
-            <div className='m-4'>
+          <div className='m-4'>
               <h1 className='text-7xl m-2  font- text-white-600'>{carddetail2.h1}</h1>
               <h1 className='text-8xl  m-2 font-extrabold text-orange-500'>{carddetail2.h2}</h1>
               <p className='text-xl  [color:#DDBF68] '>{carddetail2.p1}</p>

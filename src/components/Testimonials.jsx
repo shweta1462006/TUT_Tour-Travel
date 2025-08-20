@@ -1,16 +1,22 @@
 export default function Testimonials() {
   return (
-    <div className="bg-gray-900">
-      <div className="bg-gray-900 ml-20">
-    <p className="bg-gray-900 text-5xl font-bold ">PEOPLE'S THOUGHTS</p>
-    <p className="bg-gray-900  tracking-[8px] m-3">What People Say About Us</p></div>
-    <section className="bg-gray-900 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col pb-10 sm:pb-16 lg:pr-8 lg:pb-0 xl:pr-20">
-            <h1 className="text-2xl font-bold  ">Customer </h1>
-            <figure className="mt-10 flex flex-auto flex-col justify-between">
-              <blockquote className="text-lg/8 text-white">
+    <div className="bg-gradient-to-r from-primary to-secondary py-16 px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl sm:text-5xl font-bold text-textMain">
+          PEOPLE'S THOUGHTS
+        </h2>
+        <p className="mt-4 tracking-[4px] text-lg sm:text-xl text-subText">
+          What People Say About Us
+        </p>
+      </div>
+
+      <section>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* First Testimonial */}
+          <div className="flex flex-col">
+            <h3 className="text-2xl font-bold text-accent mb-6">Customer</h3>
+            <figure className="flex flex-col flex-grow justify-between">
+              <blockquote className="text-textMain text-lg leading-relaxed">
                 <p>
                   “Amet amet eget scelerisque tellus sit neque faucibus non
                   eleifend. Integer eu praesent at a. Ornare arcu gravida
@@ -19,25 +25,25 @@ export default function Testimonials() {
                   Tincidunt urna dui pellentesque sagittis.”
                 </p>
               </blockquote>
-              <figcaption className="mt-10 flex items-center gap-x-6">
+              <figcaption className="mt-8 flex items-center gap-x-4">
                 <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  className="size-14 rounded-full bg-gray-800"
+                  className="w-14 h-14 rounded-full"
                 />
-                <div className="text-base">
-                  <div className="font-semibold text-white">Jamini yadav</div>
-                  <div className="mt-1 text-gray-400">20 days ago</div>
+                <div className="text-textMain">
+                  <div className="font-semibold">Jamini Yadav</div>
+                  <div className="text-sm text-subText">20 days ago</div>
                 </div>
               </figcaption>
             </figure>
           </div>
-          <div className="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8 xl:pl-20">
-                      <h1 className="text-2xl font-bold  ">Customer </h1>
 
-            <figure className="mt-10 flex flex-auto flex-col justify-between">
-              
-              <blockquote className="text-lg/8 text-white">
+          {/* Second Testimonial */}
+          <div className="flex flex-col border-t border-white/10 pt-10 lg:pt-0 lg:border-t-0 lg:border-l lg:pl-10">
+            <h3 className="text-2xl font-bold text-accent mb-6">Customer</h3>
+            <figure className="flex flex-col flex-grow justify-between">
+              <blockquote className="text-textMain text-lg leading-relaxed">
                 <p>
                   “Excepteur veniam labore ullamco eiusmod. Pariatur consequat
                   proident duis dolore nulla veniam reprehenderit nisi officia
@@ -45,24 +51,21 @@ export default function Testimonials() {
                   veniam sint dolor nisi ullamco.”
                 </p>
               </blockquote>
-              <figcaption className="mt-10 flex items-center gap-x-6">
+              <figcaption className="mt-8 flex items-center gap-x-4">
                 <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  className="size-14 rounded-full bg-gray-800"
+                  className="w-14 h-14 rounded-full"
                 />
-                <div className="text-base">
-                  <div className="font-semibold text-white">
-                    Abhishek Chaturvedhi
-                  </div>
-                  <div className="mt-1 text-gray-400">11 days ago</div>
+                <div className="text-textMain">
+                  <div className="font-semibold">Abhishek Chaturvedhi</div>
+                  <div className="text-sm text-subText">11 days ago</div>
                 </div>
               </figcaption>
             </figure>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 }

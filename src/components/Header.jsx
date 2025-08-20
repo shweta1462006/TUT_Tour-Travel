@@ -1,5 +1,9 @@
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from "react-router-dom";
+import { faHouse,faLocationDot, faPhotoFilm ,faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import ThemeToggle from "./Contact/ThemeToggle";
+
 import Login from "./Login";
 
 import {
@@ -25,13 +29,23 @@ import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import Mode from "./Mode";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const navigation = [
-  { name: "Home", to: "/", current: true },
+  { name: "Home",
+    icon: <FontAwesomeIcon icon={faHouse}/>, 
+     to: "/", 
+     current: true },
 
- { name: "Tour", to: "/Tour", current: false },
-  { name: "Gallery", to: "/gallery", current: false },
-  { name: "Contact us", to: "/contact", current: false },
+ { name: "Destination",
+      icon: <FontAwesomeIcon icon={faLocationDot}/>, 
+ to: "/Tour", current: false },
+  { name: "Gallery",
+        icon: <FontAwesomeIcon icon={ faPhotoFilm }/>, 
+ to: "/gallery", current: false },
+  { name: "Contact us",
+        icon: <FontAwesomeIcon icon={faEnvelope}/>, 
+ to: "/contact", current: false },
   
 
 ];
@@ -79,6 +93,7 @@ export default function Header() {
   };
 
   return (
+    
     <Disclosure
       as="nav"
       ref={navRef}
@@ -108,38 +123,42 @@ export default function Header() {
                 className="h-10 my-auto w-10 filter invert"
               ></img>
             </div>
+           
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <NavLink
-                    key={item.name}
-                    to={item.to}
-                    className={({ isActive }) =>
-                      classNames(
-                        isActive
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-50 hover:bg-gray-700 hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
-                      )
-                    }
-                  >
-                    {item.name}
-                    
-                  </NavLink>
-                ))}
+{navigation.map((item) => (
+  <NavLink
+    key={item.name}
+    to={item.to}
+    className={({ isActive }) =>
+      classNames(
+        isActive
+          ? "bg-gray-900 text-white"
+          : "text-gray-50 hover:bg-gray-700 hover:text-white",
+        "rounded-md px-3 py-2 text-sm font-medium flex items-center"
+      )
+    }
+  >
+    <span className="mr-2">{item.icon}</span>
+    <span>{item.name}</span>
+  </NavLink>
+))}
               </div>
             </div>
           </div>
         <div>
-          <button onClick={handleClick} className="hover:border-b-2 border-balck   hover:bg-green-800 h-10 w-20 bg-slate-800 rounded-full " >login</button>
+          <button onClick={handleClick} style={{backgroundColor:"#f1bf5c"}} className="hover:border-b-2 border-balck   hover:bg-green-800 h-10 w-20  rounded-full " >login</button>
         </div>
         <div className="ml-10">
-                    <Mode/>
+                    {/* <Mode/> */}
+                    <ThemeToggle/>
                     </div>
 
         </div>
         
+     
       </div>
+      
       
 
       <DisclosurePanel className="sm:hidden">

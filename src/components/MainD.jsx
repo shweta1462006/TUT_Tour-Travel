@@ -43,9 +43,9 @@ const Carousel = () => {
             alt={slide.title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0  flex items-center justify-center">
+          {/* <div className="absolute inset-0  flex items-center justify-center">
             <h2 className="text-white text-3xl mt-100px md:text-5xl font-bold">{slide.title}</h2>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

@@ -31,45 +31,33 @@ import About2 from "../components/Contact/About2.jsx";
 export default function rootLayout() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<><Hero23 /><Hero890 /><About /><Booking /><Teams /><Testimonials /></>} />
-        <Route path="/tours" element={<><TourSection /> </>} />
-        <Route path="/tourDetail/:tourID" element={<><TourDetail /></>} />
-        <Route path="/contact" element={<><Contact /></>} />
-        <Route path="/Tour" element={<Tour />} />
-                <Route path="/hero890" element={<Hero890 />} />
+      <div className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen">
+        <Header />
 
-        <Route path="/ShowItem/:Detail89ID" element={<ShowItem />} />        <Route path="/tours" element={<> <TourSection /></>} />
-        <Route path="/gallery" element={<>  <Gallery /></>} />
-        <Route path="/hero23" element={<>  <Hero23 /></>} />
-        <Route path="/hero3" element={<>  <Hero3 /></>} />
-        <Route path="/hero3/:frontCradID" element={<>  <Hero3 /></>} />
-        <Route path="/about2" element={<><About2/></>} />
+        <Routes>
+          <Route path="/" element={<><Hero23 /><About2 /><Hero890 /><Booking /><Testimonials /></>} />
+          <Route path="/tours" element={<><TourSection /></>} />
+          <Route path="/tourDetail/:tourID" element={<><TourDetail /></>} />
+          <Route path="/contact" element={<><Contact /></>} />
+          <Route path="/Tour" element={<Tour />} />
+          <Route path="/hero890" element={<Hero890 />} />
+          <Route path="/ShowItem/:Detail89ID" element={<ShowItem />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/hero23" element={<Hero23 />} />
+          <Route path="/hero3" element={<Hero3 />} />
+          <Route path="/hero3/:frontCradID" element={<Hero3 />} />
+          <Route path="/about2" element={<About2 />} />
+          <Route path="/book" element={<Booking />} />
+          <Route path="/login" element={<Form />} />
+          <Route path="/form3" element={<Form3 />} />
+          <Route path="/copyarray" element={<Copyarry />} />
+          <Route path="/table" element={<Table />} />
+          <Route path="/aboutdetail" element={<AboutDetail />} />
+        </Routes>
 
-
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <Stats />
-              <Teams />
-              <Testimonials />
-            </>
-          }
-        />
-        <Route path="/book" element={<><Booking /></>} />
-        <Route path="/login" element={<><Form/></>} />
-        <Route path="/form3" element={<><Form3/></>} />
-        <Route path="/copyarray" element={<><Copyarry/></>} />
-        <Route path="/table" element={<><Table/></>} />
-                <Route path="/aboutdetail" element={<><AboutDetail/></>} />
-
-
-      </Routes>
-      <Newspaper/>
-      <Footer />
+        <Newspaper />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

@@ -6,7 +6,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+    isDiscount:"false",
+    isAvailable:"false",
     category: "Adventure", 
+        rating: 4.5,
+    duration: "7 Days",
+
+
   },
     {
     id: 2,
@@ -15,6 +21,12 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+    rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Adventure", 
   },
       {
@@ -24,6 +36,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Adventure", 
   },    {
     id: 4,
@@ -32,6 +51,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+            isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Adventure", 
   }, 
      {
@@ -41,6 +67,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+        isDiscount:"true",
+    isAvailable:"true",
+
     category: "Adventure", 
   },  
     {
@@ -50,27 +83,17 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
-    category: "Adventure", 
-  },
-  {
-    id: 7,
-    name: "Munnar",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/munnar/mmt/destination/m_destination-munnar-landscape_l_400_640.jpg",
-    imageAlt: "Goa beach",
-    price: "$299",
-    color: "Beach",
-    category: "Adventure", 
-  },
- 
+        isDiscount:"true",
+    isAvailable:"true",
+    rating: 4.5,
+    duration: "7 Days",
+    rating: 4.5,
+    duration: "7 Days",
 
-  {
-    id: 8,
-    name: "Karjat",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/m_Karjat_tv_destination_img_2_l_563_881.jpg",
-    price: "$299",
-    color: "Beach",
+
     category: "Adventure", 
   },
+
  
 {
     id: 9,
@@ -79,6 +102,13 @@
     imageAlt: "Goa beach",
     price: "₹7299",
     color: "Beach",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+        isDiscount:"true",
+    isAvailable:"true",
+
     category: "Treckking", 
   },
     {
@@ -87,6 +117,12 @@
     imageSrc: "https://static.wixstatic.com/media/2eb27c_a2c088165a21438da51333120546d605~mv2.jpg/v1/fill/w_1175,h_660,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2eb27c_a2c088165a21438da51333120546d605~mv2.jpg",
     price: "₹2499",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+    rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Treckking", 
   },
       {
@@ -96,6 +132,12 @@
     imageAlt: "Goa beach",
     price: "₹2399",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+    rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Treckking", 
   },    {
     id: 12,
@@ -104,6 +146,10 @@
     imageAlt: "Goa beach",
     price: "₹4299",
     color: "Beach",
+        rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Treckking", 
   }, 
      {
@@ -113,6 +159,13 @@
     imageAlt: "Goa beach",
     price: "₹4565",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+
+        rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Treckking", 
   },    {
     id: 14,
@@ -121,27 +174,16 @@
     imageAlt: "Goa beach",
     price: "₹6557",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Treckking", 
   },
-  {
-    id: 15,
-    name: "Dehradun",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Dehradun_tv_destination_img_4_l_738_1108.jpg",
-    imageAlt: "Goa beach",
-    price: "₹7886",
-    color: "Beach",
-    category: "Treckking", 
-  },
-    {
-    id: 95,
-    name: "Majestic Goa Getaway",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/states_img/mmt/activities/m_Manipur_landscape_3_l_563_1000.jpg",
-    imageAlt: "Goa beach",
-    price: "₹7886",
-    color: "Beach",
-    category: "Treckking", 
-  },
- 
+
 
   {
     id: 16,
@@ -149,6 +191,13 @@
     imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/t_trp/m_goa_main_tv_destination_img_1_l_759_1138.jpg?im=Resize=(480,480)",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+            rating: 4.5,
+    duration: "7 Days",
+
+
+    isAvailable:"true",
+
     category: "Beaches", 
   },
    {
@@ -158,6 +207,13 @@
     imageAlt: "Goa beach",
     price: "₹4589",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Beaches", 
   },
     {
@@ -167,6 +223,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Beaches", 
   },
       {
@@ -183,7 +246,14 @@
     imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_pattaya_tv_destination_img_1_l_803_1206.jpg",
     imageAlt: "Goa beach",
     price: "$299",
+        rating: 4.5,
+    duration: "7 Days",
+
+
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+
     category: "Beaches", 
   }, 
      {
@@ -193,25 +263,15 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Beaches", 
-  },    {
-    id: 22,
-    name: "Digha",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Digha_tv_destination_img_1_l_821_1321.jpg",
-    imageAlt: "Goa beach",
-    price: "$299",
-    color: "Beach",
-    category: "Beaches", 
-  },
-  {
-    id: 23,
-    name: "Bali",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Bali_tv_destination_img_1_l_771_1158.jpg",
-    imageAlt: "Goa beach",
-    price: "$299",
-    color: "Beach",
-    category: "Beaches", 
-  },
+  },  
  
 
     {
@@ -221,6 +281,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Heritages", 
   },
     {
@@ -230,6 +297,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"false",
+    isAvailable:"false",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Heritages", 
   },
       {
@@ -239,6 +313,12 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"true",
+    rating: 4.5,
+    duration: "7 Days",
+
+
     category: "Heritages", 
   },    {
     id: 28,
@@ -247,6 +327,13 @@
     imageAlt: "Goa beach",
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"false",
+        rating: 4.5,
+    duration: "7 Days",
+
+
+
     category: "Heritages", 
   }, 
      {
@@ -254,8 +341,15 @@
     name: "India Gate",
     imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/delhi/mmt/activities/m_activities_delhi_india_gate_1_l_442_663.jpg",
     imageAlt: "Goa beach",
+        rating: 4.5,
+    duration: "7 Days",
+
+
     price: "$299",
     color: "Beach",
+        isDiscount:"true",
+    isAvailable:"false",
+
     category: "Heritages", 
   },    {
     id: 30,
@@ -263,27 +357,17 @@
     imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/activities/m_Fort%20Aguada_6_l_436_654.jpg",
     imageAlt: "Goa beach",
     price: "$299",
-    color: "Beach",
-    category: "Heritages", 
-  },
-  {
-    id: 31,
-    name: "State of Unity",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/vadodara/mmt/activities/m_activities_vadodara_statue_of_unity_l_405_810.jpg",
-    imageAlt: "Goa beach",
-    price: "$299",
-    color: "Beach",
-    category: "Heritages", 
-  },
- 
+        rating: 4.5,
+    duration: "7 Days",
 
-  {
-    id: 32,
-    name: "Mysore palace",
-    imageSrc: "https://hblimg.mmtcdn.com/content/hubble/img/mysore/mmt/activities/m_activities_Mysore_Mysore%20Palace_l_386_579.jpg",
+
     color: "Beach",
+        isDiscount:"false",
+    isAvailable:"true",
+
     category: "Heritages", 
   },
+
  
 
 
